@@ -101,7 +101,7 @@ class _MyCVScreenState extends State<MyCVScreen> {
                         };
                         var request = http.MultipartRequest(
                           'POST',
-                          Uri.parse('http://10.0.2.2:8080/api/candidate/cv'),
+                           Uri.parse('https://backendserverflutter3.onrender.com/api/candidate/cv'),
                         );
                         request.headers.addAll(reqHeaders);
                         request.fields.addAll({'name': cvName});
